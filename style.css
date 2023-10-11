@@ -54,9 +54,152 @@
 
 .navbar {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 3fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 4fr 1fr 1fr;
     height: 700px;
     align-items: start;
     justify-items: start;
     padding: 40px;
+    gap: 20px;
+}
+
+.alertbar img:nth-child(2) {
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.alertbar img:nth-child(1) {
+    width: 35px;
+    height: auto;
+}
+
+.alertbar {
+    font-size: 22px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchtop {
+    display: flex;
+    justify-content: space-between;
+    margin: 45px;
+}
+
+.searchbar {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar img {
+    width: 35px;
+    height: auto;
+}
+
+input {
+    font-size: 32px;
+    width: clamp(200px, 800px, 1200px);
+    border-radius: 16px;
+    background-color: rgb(185, 179, 179);
+    border: none
+}
+
+.greetingbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.buttonlist {
+    display: flex;
+    gap: 45px;
+    color: white;
+}
+
+button {
+    border: none;
+    background-color: rgb(169, 169, 231);
+    border-radius: 28px;
+    font-size: 32px;
+    height: 80px;
+    width: 180px;
+}
+
+.greeting img {
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+}
+
+.textlineup > p {
+    font-size: 18px;
+}
+
+.textlineup p:nth-child(2) {
+    font-size: 40px;
+}
+
+.greeting {
+    display: flex;
+    gap: 30px;
+}
+
+.textlineup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.body {
+    padding: 30px;
+    display: grid;
+    grid: "first second" 1fr "project other" 15fr / 4fr 1fr;
+    gap: 25px;
+}
+
+.projectarea {
+    grid-area: project;
+    display: grid;
+    grid: 1fr 1fr 1fr / 1fr 1fr;
+    gap: 30px;
+}
+
+.otherarea {
+    grid-area: other;
+}
+
+.firsttitle {
+    grid-area: first;
+    justify-self: start;
+    align-self: end;
+    font-size: 32px;
+}
+
+.secondtitle {
+    font-size: 32px;
+    grid-area: second;
+    justify-self: start;
+    align-self: end;
+}
+
+.project {
+    display: flex;
+}
+
+.yellowbox {
+    width: 10px;
+    height: 100%;
+    background-color: rgb(220, 220, 57);
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.content {
+    background-color: white;
+    flex: 1;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
 }
