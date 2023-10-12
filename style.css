@@ -169,6 +169,7 @@ button {
 
 .otherarea {
     grid-area: other;
+    
 }
 
 .firsttitle {
@@ -181,6 +182,12 @@ button {
 .secondtitle {
     font-size: 32px;
     grid-area: second;
+    justify-self: start;
+    align-self: end;
+}
+
+.thirdtitle {
+    font-size: 32px;
     justify-self: start;
     align-self: end;
 }
@@ -202,4 +209,98 @@ button {
     flex: 1;
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
+    display:grid;
+    grid: "top top top top" 1fr "mid mid mid mid" 2fr ". icon icon2 icon3" 1fr / 4fr 1fr 1fr 1fr;
+    gap: 7px;
+    padding: 15px;
+}
+
+.icon,
+.icon2,
+.icon3 {
+    width: 36px;
+    height: auto;
+}
+
+.icon {
+    grid-area: icon;
+}
+
+.icon2 {
+    grid-area: icon2;
+}
+
+.icon3 {
+    grid-area: icon3;
+}
+
+.top {
+    grid-area: top;
+    font-size: 32px;
+    align-self: self-end;
+    font-weight: bold;
+}
+
+.mid {
+    grid-area: mid;
+    font-size: 20px;
+}
+
+.announcements {
+    background-color: white;
+    border-radius: 16px;
+}
+
+.trending {
+    background-color: white;
+    border-radius: 16px;
+}
+
+.otherarea {
+    display: grid;
+    grid-template-rows: 3fr 0.6fr 3fr;
+    gap: 30px;
+}
+
+.announcements,
+.trending,
+.project, {
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 
+            0px 2px 4px rgba(0,0,0,0.1), 
+            0px 4px 8px rgba(0,0,0,0.1), 
+            0px 8px 16px rgba(0,0,0,0.1);
+}
+
+.body {
+    box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1), 
+    inset 0px 2px 4px rgba(0,0,0,0.1), 
+    inset 0px 4px 8px rgba(0,0,0,0.1), 
+    inset 0px 8px 16px rgba(0,0,0,0.1);
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.line {
+    height: 1px;
+    background-color: rgb(124, 124, 124);
+}
+
+.ann {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.funny {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.desc {
+    color: rgb(52, 52, 52);
 }
